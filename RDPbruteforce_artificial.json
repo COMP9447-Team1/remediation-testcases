@@ -1,0 +1,18 @@
+{
+  "version": "0",
+  "id": "683c6999-55c6-2d08-f867-8eb281aa87c6",
+  "detail-type": "Security Hub Findings - Custom Action",
+  "source": "aws.guardduty",
+  "account": "221094580673",
+  "time": "2021-03-18T04:19:57Z",
+  "region": "us-east-1",
+  "resources": [
+    "arn:aws:securityhub:us-east-1:221094580673:action/custom/cis29RR"
+  ],
+  "detail": {
+    "actionName": "CIS 2.9 RR",
+    "actionDescription": "Remediates CIS 2.9 by enabling reject filtered VPC flow logging for VPCs without it",
+	"type":  ["UnauthorizedAccess:EC2/RDPBruteForce"],
+	"title": "This is a test event, please disregard"
+  }
+}
