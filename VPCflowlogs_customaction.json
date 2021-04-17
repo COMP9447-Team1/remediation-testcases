@@ -1,0 +1,98 @@
+{
+  "version": "0",
+  "id": "683c6999-55c6-2d08-f867-8eb281aa87c6",
+  "detail-type": "Security Hub Findings - Custom Action",
+  "source": "aws.securityhub",
+  "account": "221094580673",
+  "time": "2021-03-18T04:19:57Z",
+  "region": "us-east-1",
+  "resources": [
+    "arn:aws:securityhub:us-east-1:221094580673:action/custom/cis29RR"
+  ],
+  "detail": {
+    "actionName": "CIS 2.9 RR",
+    "actionDescription": "Remediates CIS 2.9 by enabling reject filtered VPC flow logging for VPCs without it",
+    "findings": [
+      {
+        "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+        "Types": [
+          "Software and Configuration Checks/Industry and Regulatory Standards/CIS AWS Foundations Benchmark"
+        ],
+        "Description": "VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC. After you\\'ve created a flow log, you can view and retrieve its data in Amazon CloudWatch Logs. It is recommended that VPC Flow Logs be enabled for packet \"Rejects\" for VPCs.",
+        "SchemaVersion": "2018-10-08",
+        "Compliance": {
+          "Status": "FAILED"
+        },
+        "GeneratorId": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0/rule/2.9",
+        "FirstObservedAt": "2021-03-16T19:30:58.421Z",
+        "CreatedAt": "2021-03-16T19:30:58.421Z",
+        "RecordState": "ACTIVE",
+        "Title": "2.9 Ensure VPC flow logging is enabled in all VPCs",
+        "Workflow": {
+          "Status": "NEW"
+        },
+        "LastObservedAt": "2021-03-17T19:56:09.240Z",
+        "Severity": {
+          "Normalized": 40,
+          "Label": "MEDIUM",
+          "Product": 40,
+          "Original": "MEDIUM"
+        },
+        "UpdatedAt": "2021-03-17T19:56:07.330Z",
+        "FindingProviderFields": {
+          "Types": [
+            "Software and Configuration Checks/Industry and Regulatory Standards/CIS AWS Foundations Benchmark"
+          ],
+          "Severity": {
+            "Normalized": 40,
+            "Label": "MEDIUM",
+            "Product": 40,
+            "Original": "MEDIUM"
+          }
+        },
+        "WorkflowState": "NEW",
+        "ProductFields": {
+          "StandardsGuideArn": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0",
+          "StandardsGuideSubscriptionArn": "arn:aws:securityhub:us-east-1:221094580673:subscription/cis-aws-foundations-benchmark/v/1.2.0",
+          "RuleId": "2.9",
+          "RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/standards-cis-2.9/remediation",
+          "RelatedAWSResources:0/name": "securityhub-vpc-flow-logs-enabled-3eee5040",
+          "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+          "StandardsControlArn": "arn:aws:securityhub:us-east-1:221094580673:control/cis-aws-foundations-benchmark/v/1.2.0/2.9",
+          "aws/securityhub/ProductName": "Security Hub",
+          "aws/securityhub/CompanyName": "AWS",
+          "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:221094580673:subscription/cis-aws-foundations-benchmark/v/1.2.0/2.9/finding/395b2304-92fd-4929-bc92-4f9f239194c7"
+        },
+        "AwsAccountId": "221094580673",
+        "Id": "arn:aws:securityhub:us-east-1:221094580673:subscription/cis-aws-foundations-benchmark/v/1.2.0/2.9/finding/395b2304-92fd-4929-bc92-4f9f239194c7",
+        "Remediation": {
+          "Recommendation": {
+            "Text": "For directions on how to fix this issue, please consult the AWS Security Hub CIS documentation.",
+            "Url": "https://docs.aws.amazon.com/console/securityhub/standards-cis-2.9/remediation"
+          }
+        },
+        "Resources": [
+          {
+            "Partition": "aws",
+            "Type": "AwsEc2Vpc",
+            "Details": {
+              "AwsEc2Vpc": {
+                "DhcpOptionsId": "dopt-00fdab7a",
+                "State": "available",
+                "CidrBlockAssociationSet": [
+                  {
+                    "CidrBlockState": "associated",
+                    "CidrBlock": "10.0.0.0/24",
+                    "AssociationId": "vpc-cidr-assoc-066a5cb03ddc796c2"
+                  }
+                ]
+              }
+            },
+            "Region": "us-east-1",
+            "Id": "arn:aws:ec2:us-east-1:221094580673:vpc/vpc-03c4f2b6dcdcabd76"
+          }
+        ]
+      }
+    ]
+  }
+}
