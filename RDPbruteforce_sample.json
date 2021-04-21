@@ -1,152 +1,159 @@
-[
-  {
-    "schemaVersion": "2.0",
-    "accountId": "221094580673",
-    "region": "us-east-1",
-    "partition": "aws",
-    "id": "22bc6200073a324d7405630cb891dc59",
-    "arn": "arn:aws:guardduty:us-east-1:221094580673:detector/72bc1ce8178a5213657f82d9b2765b74/finding/22bc6200073a324d7405630cb891dc59",
-    "type": "UnauthorizedAccess:EC2/RDPBruteForce",
-    "resource": {
-      "resourceType": "Instance",
-      "instanceDetails": {
-        "instanceId": "i-99999999",
-        "instanceType": "m3.xlarge",
-        "outpostArn": "arn:aws:outposts:us-west-2:123456789000:outpost/op-0fbc006e9abbc73c3",
-        "launchTime": "2016-08-02T02:05:06Z",
-        "platform": null,
-        "productCodes": [
-          {
-            "productCodeId": "GeneratedFindingProductCodeId",
-            "productCodeType": "GeneratedFindingProductCodeType"
-          }
-        ],
-        "iamInstanceProfile": {
-          "arn": "arn:aws:iam::221094580673:example/instance/profile",
-          "id": "GeneratedFindingInstanceProfileId"
-        },
-        "networkInterfaces": [
-          {
-            "networkInterfaceId": "eni-bfcffe88",
-            "privateIpAddresses": [
-              {
-                "privateDnsName": "GeneratedFindingPrivateName",
-                "privateIpAddress": "10.0.0.1"
-              }
-            ],
-            "subnetId": "GeneratedFindingSubnetId",
-            "vpcId": "GeneratedFindingVPCId",
-            "privateDnsName": "GeneratedFindingPrivateDnsName",
-            "securityGroups": [
-              {
-                "groupName": "GeneratedFindingSecurityGroupName",
-                "groupId": "GeneratedFindingSecurityId"
-              }
-            ],
-            "publicIp": "198.51.100.0",
-            "ipv6Addresses": [],
-            "publicDnsName": "GeneratedFindingPublicDNSName",
-            "privateIpAddress": "10.0.0.1"
-          }
-        ],
-        "tags": [
-          {
-            "value": "GeneratedFindingInstaceValue1",
-            "key": "GeneratedFindingInstaceTag1"
-          },
-          {
-            "value": "GeneratedFindingInstaceTagValue2",
-            "key": "GeneratedFindingInstaceTag2"
-          },
-          {
-            "value": "GeneratedFindingInstaceTagValue3",
-            "key": "GeneratedFindingInstaceTag3"
-          },
-          {
-            "value": "GeneratedFindingInstaceTagValue4",
-            "key": "GeneratedFindingInstaceTag4"
-          },
-          {
-            "value": "GeneratedFindingInstaceTagValue5",
-            "key": "GeneratedFindingInstaceTag5"
-          },
-          {
-            "value": "GeneratedFindingInstaceTagValue6",
-            "key": "GeneratedFindingInstaceTag6"
-          },
-          {
-            "value": "GeneratedFindingInstaceTagValue7",
-            "key": "GeneratedFindingInstaceTag7"
-          },
-          {
-            "value": "GeneratedFindingInstaceTagValue8",
-            "key": "GeneratedFindingInstaceTag8"
-          },
-          {
-            "value": "GeneratedFindingInstaceTagValue9",
-            "key": "GeneratedFindingInstaceTag9"
-          }
-        ],
-        "instanceState": "running",
-        "availabilityZone": "GeneratedFindingInstaceAvailabilityZone",
-        "imageId": "ami-99999999",
-        "imageDescription": "GeneratedFindingInstaceImageDescription"
-      }
-    },
-    "service": {
-      "serviceName": "guardduty",
-      "detectorId": "72bc1ce8178a5213657f82d9b2765b74",
-      "action": {
-        "actionType": "NETWORK_CONNECTION",
-        "networkConnectionAction": {
-          "connectionDirection": "INBOUND",
-          "localIpDetails": {
-            "ipAddressV4": "10.0.0.23"
-          },
-          "remoteIpDetails": {
-            "ipAddressV4": "198.51.100.0",
-            "organization": {
-              "asn": "-1",
-              "asnOrg": "GeneratedFindingASNOrg",
-              "isp": "GeneratedFindingISP",
-              "org": "GeneratedFindingORG"
-            },
-            "country": {
-              "countryName": "GeneratedFindingCountryName"
-            },
-            "city": {
-              "cityName": "GeneratedFindingCityName"
-            },
-            "geoLocation": {
-              "lat": 0,
-              "lon": 0
-            }
-          },
-          "remotePortDetails": {
-            "port": 1067,
-            "portName": "Unknown"
-          },
-          "localPortDetails": {
-            "port": 3389,
-            "portName": "RDP"
-          },
-          "protocol": "TCP",
-          "blocked": false
-        }
-      },
-      "resourceRole": "TARGET",
-      "additionalInfo": {
-        "sample": true
-      },
-      "eventFirstSeen": "2021-04-12T02:54:01.332Z",
-      "eventLastSeen": "2021-04-21T03:16:08.543Z",
-      "archived": false,
-      "count": 16
-    },
-    "severity": 2,
-    "createdAt": "2021-04-12T02:54:01.332Z",
-    "updatedAt": "2021-04-21T03:16:08.543Z",
-    "title": "198.51.100.0 is performing RDP brute force attacks against i-99999999.",
-    "description": "198.51.100.0 is performing RDP brute force attacks against i-99999999. Brute force attacks are used to gain unauthorized access to your instance by guessing the RDP password."
-  }
-]
+{
+	"version": "0",
+	"id": "683c6999-55c6-2d08-f867-8eb281aa87c6",
+	"detail-type": "Security Hub Findings - Custom Action",
+	"source": "aws.guardduty",
+	"account": "221094580673",
+	"time": "2021-03-18T04:19:57Z",
+	"region": "us-east-1",
+	"detail": {
+		"schemaVersion": "2.0",
+		"accountId": "221094580673",
+		"region": "us-east-1",
+		"partition": "aws",
+		"id": "22bc6200073a324d7405630cb891dc59",
+		"arn": "arn:aws:guardduty:us-east-1:221094580673:detector/72bc1ce8178a5213657f82d9b2765b74/finding/22bc6200073a324d7405630cb891dc59",
+		"type": "UnauthorizedAccess:EC2/RDPBruteForce",
+		"resource": {
+		  "resourceType": "Instance",
+		  "instanceDetails": {
+			"instanceId": "i-99999999",
+			"instanceType": "m3.xlarge",
+			"outpostArn": "arn:aws:outposts:us-west-2:123456789000:outpost/op-0fbc006e9abbc73c3",
+			"launchTime": "2016-08-02T02:05:06Z",
+			"platform": null,
+			"productCodes": [
+			  {
+				"productCodeId": "GeneratedFindingProductCodeId",
+				"productCodeType": "GeneratedFindingProductCodeType"
+			  }
+			],
+			"iamInstanceProfile": {
+			  "arn": "arn:aws:iam::221094580673:example/instance/profile",
+			  "id": "GeneratedFindingInstanceProfileId"
+			},
+			"networkInterfaces": [
+			  {
+				"networkInterfaceId": "eni-bfcffe88",
+				"privateIpAddresses": [
+				  {
+					"privateDnsName": "GeneratedFindingPrivateName",
+					"privateIpAddress": "10.0.0.1"
+				  }
+				],
+				"subnetId": "GeneratedFindingSubnetId",
+				"vpcId": "GeneratedFindingVPCId",
+				"privateDnsName": "GeneratedFindingPrivateDnsName",
+				"securityGroups": [
+				  {
+					"groupName": "GeneratedFindingSecurityGroupName",
+					"groupId": "GeneratedFindingSecurityId"
+				  }
+				],
+				"publicIp": "198.51.100.0",
+				"ipv6Addresses": [],
+				"publicDnsName": "GeneratedFindingPublicDNSName",
+				"privateIpAddress": "10.0.0.1"
+			  }
+			],
+			"tags": [
+			  {
+				"value": "GeneratedFindingInstaceValue1",
+				"key": "GeneratedFindingInstaceTag1"
+			  },
+			  {
+				"value": "GeneratedFindingInstaceTagValue2",
+				"key": "GeneratedFindingInstaceTag2"
+			  },
+			  {
+				"value": "GeneratedFindingInstaceTagValue3",
+				"key": "GeneratedFindingInstaceTag3"
+			  },
+			  {
+				"value": "GeneratedFindingInstaceTagValue4",
+				"key": "GeneratedFindingInstaceTag4"
+			  },
+			  {
+				"value": "GeneratedFindingInstaceTagValue5",
+				"key": "GeneratedFindingInstaceTag5"
+			  },
+			  {
+				"value": "GeneratedFindingInstaceTagValue6",
+				"key": "GeneratedFindingInstaceTag6"
+			  },
+			  {
+				"value": "GeneratedFindingInstaceTagValue7",
+				"key": "GeneratedFindingInstaceTag7"
+			  },
+			  {
+				"value": "GeneratedFindingInstaceTagValue8",
+				"key": "GeneratedFindingInstaceTag8"
+			  },
+			  {
+				"value": "GeneratedFindingInstaceTagValue9",
+				"key": "GeneratedFindingInstaceTag9"
+			  }
+			],
+			"instanceState": "running",
+			"availabilityZone": "GeneratedFindingInstaceAvailabilityZone",
+			"imageId": "ami-99999999",
+			"imageDescription": "GeneratedFindingInstaceImageDescription"
+		  }
+		},
+		"service": {
+		  "serviceName": "guardduty",
+		  "detectorId": "72bc1ce8178a5213657f82d9b2765b74",
+		  "action": {
+			"actionType": "NETWORK_CONNECTION",
+			"networkConnectionAction": {
+			  "connectionDirection": "INBOUND",
+			  "localIpDetails": {
+				"ipAddressV4": "10.0.0.23"
+			  },
+			  "remoteIpDetails": {
+				"ipAddressV4": "198.51.100.0",
+				"organization": {
+				  "asn": "-1",
+				  "asnOrg": "GeneratedFindingASNOrg",
+				  "isp": "GeneratedFindingISP",
+				  "org": "GeneratedFindingORG"
+				},
+				"country": {
+				  "countryName": "GeneratedFindingCountryName"
+				},
+				"city": {
+				  "cityName": "GeneratedFindingCityName"
+				},
+				"geoLocation": {
+				  "lat": 0,
+				  "lon": 0
+				}
+			  },
+			  "remotePortDetails": {
+				"port": 1067,
+				"portName": "Unknown"
+			  },
+			  "localPortDetails": {
+				"port": 3389,
+				"portName": "RDP"
+			  },
+			  "protocol": "TCP",
+			  "blocked": false
+			}
+		  },
+		  "resourceRole": "TARGET",
+		  "additionalInfo": {
+			"sample": true
+		  },
+		  "eventFirstSeen": "2021-04-12T02:54:01.332Z",
+		  "eventLastSeen": "2021-04-21T03:16:08.543Z",
+		  "archived": false,
+		  "count": 16
+		},
+		"severity": 2,
+		"createdAt": "2021-04-12T02:54:01.332Z",
+		"updatedAt": "2021-04-21T03:16:08.543Z",
+		"title": "198.51.100.0 is performing RDP brute force attacks against i-99999999.",
+		"description": "198.51.100.0 is performing RDP brute force attacks against i-99999999. Brute force attacks are used to gain unauthorized access to your instance by guessing the RDP password."
+	}
+}
